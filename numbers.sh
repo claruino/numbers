@@ -7,11 +7,11 @@ read N
 count=1
 while [ $count -le $N ]
 do
-	if [ $((N%2)) -eq 0 ]
+	if [ $((count%2)) -eq 0 ]
 	then 
-		echo "EVEN $N"
+		echo "$count even"
 	else
-		echo "ODD $N"
+		echo "$count odd"
 	fi
-	N=$((N+1))
+	count=$((count+1))
 done
